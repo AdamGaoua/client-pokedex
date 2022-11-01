@@ -17,7 +17,7 @@
 #nav-searh-responsive{
     display:none;
 }
-.css-1frpczi-MuiTypography-root{
+#nav-pokedex-typo{
     padding-left:1em;
     color:black
 }
@@ -34,7 +34,6 @@
     background-color: white;
    
 }
-
 
 .nav-menu:hover{
     box-sizing: border-box;
