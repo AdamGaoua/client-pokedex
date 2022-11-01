@@ -68,6 +68,8 @@ function Navbar({ isLogged, setIsLogged, setSuccess, setPokedex, isActive }) {
     const theme = createTheme({
         typography: {
             "fontFamily": `"Alumni Sans Collegiate One", sans-serif`,
+            // "color": `"black"`,
+            // "pl": "1rem",
         }
     })
     return (

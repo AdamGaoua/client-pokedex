@@ -21,6 +21,7 @@
     padding-left:1em;
     color:black
 }
+
 #navbar-toolbar{
     /* z-index:99;
     position:fixed;
@@ -34,9 +35,6 @@
    
 }
 
-.nav-element-right{
-    padding-bottom: 1.5rem;
-}
 
 .nav-menu:hover{
     box-sizing: border-box;
