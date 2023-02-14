@@ -22,7 +22,9 @@ function Pokemons({ setPokedex, pokedex, isLogged, setIsActive, deck, setDeck })
     }
     async function requestForPokemon() {
         try {
+            console.log("blabla")
             const response = await PokemonRequest();
+            console.log("response", response)
             setPokedex(response.data);
             setIsActive(true)
         } catch (error) {

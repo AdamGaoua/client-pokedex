@@ -12,7 +12,11 @@
 
 .pokemon-img{
     padding-top: 1rem;
-    cursor: pointer
+    cursor: pointer;
+    transition: transform 0.5s ease-in ;
+}
+.pokemon-img:hover{
+    transform: scale(1.1);
 }
 
 .pokemon-nom{
@@ -33,6 +37,7 @@
     padding-top: 0.3rem;
 }
 .pokemon-icon{
+    color:blue;
     cursor:pointer;
     padding:0;
     border: white;
@@ -40,7 +45,7 @@
 }
 .MuiSvgIcon-root{
     background-color: none;
-    color:blue
+    
 }
 h3{
     margin:0

@@ -42,7 +42,7 @@ function Footer() {
                     />
                 </Typography>
             </div>
-                <Typography sx={{bgcolor:"lightcoral", fontSize:".8rem", pb:"1%"}}>
+                <Typography sx={{bgcolor:"#385B5F", fontSize:".8rem", pb:"10px"}}>
                     Les pokémons et leurs noms sont déposés par Nintendo
                 </Typography>     
         </div>

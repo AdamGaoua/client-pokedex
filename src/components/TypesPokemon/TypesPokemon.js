@@ -46,7 +46,6 @@ function TypesPokemon({ setIsActive, setDeck }) {
 
     return (
         <div id="types">
-            <h2 className="types-title">Types de Pokemon </h2>
             <div className="types-pokemon">
                 {types.length > 0 && types.map((type) => (
                     <TypePokemon key={type.id} {...type} />

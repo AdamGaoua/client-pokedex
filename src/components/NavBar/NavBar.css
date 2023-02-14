@@ -3,10 +3,22 @@
 } */
 .nav-menu {    
     margin: 0.5rem;
+    padding: .5rem;
     text-decoration: none; 
     transition: all 0.2s ease-in;
     color: black;
     font-weight: bold;
+}
+
+.nav-menu:hover{
+    background-color: #C6C5CA;
+}
+
+.nav-menu-connexion{
+    font-family: "Segeo Ui", sans-serif !important;
+}
+.nav-menu-connexion:hover{
+    background-color: lightblue
 }
 
 .nav-pokedex{
@@ -21,27 +33,30 @@
     padding-left:1em;
     color:black
 }
-
+/* #deconnexion{
+    background-color:#C6C5CA ;
+    border:1px solid black;
+} */
 #navbar-toolbar{
     /* z-index:99;
     position:fixed;
     width:100%; */
-    background-color: lightcoral;
+    background-color: #CA1454;
     justify-content: space-between;    
 }
 
 .nav-search{
-    background-color: white;
-   
+    background-color: white;   
 }
 
-.nav-menu:hover{
+/* .nav-menu:hover{
     box-sizing: border-box;
     border-bottom: solid white .15em;
-}
+} */
 
 .nav-menu:active{
     text-decoration: underline;
+    text-decoration-color: white
 }
 
 .nav-button-connexion:hover{

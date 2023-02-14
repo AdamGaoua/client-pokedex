@@ -22,7 +22,7 @@ function Inscription({setIsActive}) {
     const navigate = useNavigate();
     
       const styleBox={
-        bgcolor: 'lightgrey',
+        
         p:"2rem",
         textAlign:"center"
       }
@@ -73,9 +73,9 @@ function Inscription({setIsActive}) {
 
     return (
         <div className="inscription-container">
-            <Box sx={styleBox}>
-                <h2 className="inscription-title">Inscription</h2>
-                <form
+            <Box sx={styleBox} className="inscription-box">
+                <h2 className="inscription-title">Formulaire d'inscription</h2>
+                <form 
                     action="submit"
                     onSubmit={handleSubmit}
                 >
@@ -86,6 +86,7 @@ function Inscription({setIsActive}) {
                         Pseudo
                     </InputLabel>
                     <Input
+                        className="inscription-input"
                         id="username"
                         type="text"
                         name="username"
@@ -100,6 +101,7 @@ function Inscription({setIsActive}) {
                         Adresse Email
                     </InputLabel>
                     <Input
+                        className="inscription-input"
                         id="email"
                         type="email"                               
                         name="email"
@@ -114,6 +116,7 @@ function Inscription({setIsActive}) {
                         Nom
                     </InputLabel>
                     <Input
+                        className="inscription-input"
                         id="lastname"
                         type="text"
                         name="lastname"
@@ -128,6 +131,7 @@ function Inscription({setIsActive}) {
                         Prénom
                     </InputLabel>
                     <Input
+                        className="inscription-input"
                         id="firstname"
                         type="text"
                         name="username"
@@ -142,6 +146,7 @@ function Inscription({setIsActive}) {
                         Mot de passe
                     </InputLabel>
                     <Input
+                        className="inscription-input"
                         id="password"
                         type="password"
                         name="password"
@@ -156,11 +161,11 @@ function Inscription({setIsActive}) {
                         8 caractères requis
                     </FormHelperText>
                     <Button 
+                    id="inscription-submit"
                     type="submit"
                     >
                         Envoyer
                     </Button>
-
                 </form>
             </Box>               
 

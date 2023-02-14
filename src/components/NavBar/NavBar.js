@@ -11,7 +11,7 @@ import {
     InputLabel,
     Button,
     Typography
-}
+    }
     from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -80,29 +80,29 @@ function Navbar({ isLogged, setIsLogged, setSuccess, setPokedex, isActive }) {
                 <Toolbar id="navbar-toolbar">
                     <div id="navbar-container-menu">
 
-                        <Button>
+                        {/* <Button> */}
                             <NavLink className="nav-menu" to="/">Accueil </NavLink>
-                        </Button>
-                        <Button>
-                            <NavLink className="nav-menu" to="/types">Types </NavLink>
-                        </Button>
+                        {/* </Button> */}
+                        {/* <Button> */}
+                            <NavLink className="nav-menu" to="/types">Types de Pokemon</NavLink>
+                        {/* </Button> */}
                         {isLogged ?
                             <>
-                                <Button>
-                                    <NavLink className="nav-menu" to="/Deck">Deck</NavLink>
-                                </Button>
-                                <Button>
-                                    <NavLink className="nav-menu" to="/Profil"> Profil</NavLink>
-                                </Button>
-                                <Button sx={{ ":hover": { bgcolor: "lightblue" } }} className="nav-menu" type="button" onClick={handleClick}>Déconnexion</Button>
+                                {/* <Button> */}
+                                    <NavLink className="nav-menu" to="/Deck"> Voir son Deck</NavLink>
+                                {/* </Button>
+                                <Button> */}
+                                    <NavLink className="nav-menu" to="/Profil"> Votre Profil</NavLink>
+                                {/* </Button> */}
+                                <Button  className="nav-menu nav-menu-connexion" sx={{color:"black", ":hover": { bgcolor: "lightblue" }, fontWeight:"bold", fontSize:"16px",  lineHeight:"16px", textTransform:"none"}} type="button" onClick={handleClick}> <p className="nav-menu-connexion">Se Déconnecter</p></Button>
                             </> :
                             <>
-                                <Button >
-                                    <NavLink className="nav-menu" to="/Inscription">Inscription</NavLink>
-                                </Button>
-                                <Button sx={{ ":hover": { bgcolor: "lightblue" } }}>
-                                    <NavLink className="nav-menu " to="/Connexion">Connexion</NavLink>
-                                </Button>
+                                {/* <Button > */}
+                                    <NavLink className="nav-menu" to="/Inscription">Rejoindre Pokedeck </NavLink>
+                                {/* </Button> */}
+                                {/* <Button sx={{ ":hover": { bgcolor: "lightblue" } }}> */}
+                                    <NavLink className="nav-menu nav-menu-connexion" to="/Connexion">Se Connecter</NavLink>
+                                {/* </Button> */}
                             </>
                         }
                     </div>
@@ -115,7 +115,7 @@ function Navbar({ isLogged, setIsLogged, setSuccess, setPokedex, isActive }) {
                         <img className="nav-logo" src="/img/pokeball.png" alt="logo pokeball" />
                         <ThemeProvider theme={theme}>
                             <Typography variant="h2" id="nav-pokedex-typo">
-                                Pokedex
+                                Pokedeck
                             </Typography>
                         </ThemeProvider>
                         <Button
@@ -141,7 +141,7 @@ function Navbar({ isLogged, setIsLogged, setSuccess, setPokedex, isActive }) {
                                     <Button onClick={handleBurger}>
                                         <NavLink className="nav-menu" to="/Profil"> Profil</NavLink>
                                     </Button>
-                                    <Button sx={{ ":hover": { bgcolor: "lightblue" } }} className="nav-menu" type="button" onClick={handleClick}>Déconnexion</Button>
+                                    <Button sx={{ ":hover": { bgcolor: "lightblue", fontFamily:"Segeo UI" } }} className="nav-menu" type="button" onClick={handleClick}>Déconnexion</Button>
                                 </> :
                                 <>
                                     <Button onClick={handleBurger}>
